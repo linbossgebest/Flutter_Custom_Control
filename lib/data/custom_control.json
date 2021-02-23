@@ -1,0 +1,119 @@
+[
+    {
+        "control_type": "text",
+        "control_label": "文本框",
+        "control_field": "d4d48925-8abf-34f1-8d33-1cb08ae9e570",
+        "control_verify": "",
+        "control_default": "",
+        "control_required": "0"
+    },
+    {
+        "control_type": "radio",
+        "control_label": "单选项",
+        "control_field": "ce7299fa-3bec-b36d-2dca-7bbbc8bb5f36",
+        "control_item": [
+            {
+                "identify": "05336931969785996",
+                "color": "color_a",
+                "name": "测试1",
+                "defaults": "0"
+            },
+            {
+                "identify": "47286029805670323",
+                "color": "color_a",
+                "name": "测试2",
+                "defaults": "0"
+            },
+            {
+                "identify": "47286029805670323",
+                "color": "color_a",
+                "name": "测试3",
+                "defaults": "1"
+            }
+        ],
+        "control_required": "0"
+    },
+    {
+        "control_type": "texteditor",
+        "control_label": "编辑器",
+        "control_field": "2914b551-8b4f-80a0-2c17-afe2d408e172",
+        "control_verify": "",
+        "control_height": "200px",
+        "control_default": "",
+        "control_required": "0"
+    },
+    {
+        "control_type": "checkbox",
+        "control_label": "多选项",
+        "control_field": "574e59d0-1419-0f8c-9375-009bb4ab2c91",
+        "control_item": [
+            {
+                "identify": "5342742224603128",
+                "color": "color_a",
+                "name": "测试1",
+                "defaults": "0"
+            },
+            {
+                "identify": "5342742224603121",
+                "color": "color_a",
+                "name": "测试2",
+                "defaults": "0"
+            },
+            {
+                "identify": "5342742224603122",
+                "color": "color_a",
+                "name": "测试3",
+                "defaults": "1"
+            }
+        ],
+        "control_required": "0"
+    },
+    {
+        "control_type": "select",
+        "control_label": "下拉框",
+        "control_field": "7a0b93ea-8b80-6feb-1b5f-402c0621d498",
+        "control_item": [
+            {
+                "identify": "0070433722007627875",
+                "color": "color_a",
+                "name": "测试1",
+                "defaults": "0"
+            },
+            {
+                "identify": "03139818597796307",
+                "color": "color_a",
+                "name": "测试2",
+                "defaults": "1"
+            },
+            {
+                "identify": "08041303398496247",
+                "color": "color_a",
+                "name": "测试3",
+                "defaults": "0"
+            }
+        ],
+        "control_required": "0"
+    },
+    {
+        "control_type": "datetime",
+        "control_label": "日期框",
+        "control_field": "b7041484-c2d7-3c99-441b-1a475abc0703",
+        "control_dateformat": "date",
+        "control_default": "",
+        "control_required": "0"
+    },
+    {
+        "control_type": "image",
+        "control_label": "上传图片",
+        "control_field": "aa334fa1-113a-0ea6-05ba-6cd196a922f5",
+        "control_fileformat": "jpg,gif,png,bmp",
+        "control_required": "0"
+    },
+    {
+        "control_type": "upload",
+        "control_label": "上传文件",
+        "control_field": "df374626-417f-6ae7-fc59-5a2ce3fd93de",
+        "control_fileformat": "doc,xls,ppt,pdf",
+        "control_required": "0"
+    }
+]

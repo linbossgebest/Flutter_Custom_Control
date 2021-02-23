@@ -1,0 +1,104 @@
+[
+    {
+        "order": 0,
+        "nodes": [
+            {
+                "flowname": "开始",
+                "result": "1"
+            }
+        ]
+    },
+    {
+        "order": 1,
+        "nodes": [
+            {
+                "flowname": "工程部部长",
+                "result": "1"
+            }
+        ]
+    },
+    {
+        "order": 2,
+        "nodes": [
+            {
+                "flowname": "整改问题",
+                "result": "1"
+            }
+        ]
+    },
+    {
+        "order": 3,
+        "nodes": [
+            {
+                "flowname": "自检：当前班组",
+                "result": "1"
+            }
+        ]
+    },
+    {
+        "order": 4,
+        "nodes": [
+            {
+                "flowname": "专检：工区负责人",
+                "result": "2"
+            }
+        ]
+    },
+    {
+        "order": 5,
+        "nodes": [
+            {
+                "flowname": "资料归档",
+                "result": "0"
+            }
+        ]
+    },
+    {
+        "order": 6,
+        "nodes": [
+            {
+                "flowname": "分流节点",
+                "result": "0"
+            }
+        ]
+    },
+    {
+        "order": 7,
+        "nodes": [
+            {
+                "flowname": "工程部部长",
+                "result": "0"
+            },
+            {
+                "flowname": "项目总工",
+                "result": "0"
+            },
+            {
+                "flowname": "项目副经理",
+                "result": "0"
+            },
+            {
+                "flowname": "项目经理",
+                "result": "0"
+            }
+        ]
+    },
+    {
+        "order": 8,
+        "nodes": [
+            {
+                "flowname": "汇总审批",
+                "result": "0"
+            }
+        ]
+    },
+    {
+        "order": 9,
+        "nodes": [
+            {
+                "flowname": "结束",
+                "result": "0"
+            }
+        ]
+    }
+]
