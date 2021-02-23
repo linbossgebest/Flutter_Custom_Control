@@ -1,6 +1,6 @@
 # flutter_custom_control
 
-A new Flutter project.
+A new Flutter project.(根据传入json数据自定义展示控件群)
 
 ## Getting Started
 
