@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_custom_control/service/control_service.dart';
 import 'package:flutter_custom_control/util/common.dart';
 import 'package:steps/steps.dart';
 
@@ -12,14 +13,20 @@ class CustomSteps extends StatefulWidget {
 }
 
 class _CustomStepsState extends State<CustomSteps> {
+
+  Future getFlowProcess() async {
+    return queryFlowProcess();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
         child: FutureBuilder(
-            future: getJsonData('lib/data/process_operation.json', context),
+            //future: getJsonData('lib/data/process_operation.json', context),
+            future:getFlowProcess() ,
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                List<dynamic> data = json.decode(snapshot.data.toString());
+                List<dynamic> data=snapshot.data["resultdata"];
                 return Steps(
                     direction: Axis.vertical,
                     size: 16.0,

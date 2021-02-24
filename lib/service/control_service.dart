@@ -6,3 +6,8 @@ queryFrmTemplate() async {
   Map<String, dynamic> queryParameters = {};
   return await get(Config.getFrmtemplate, queryParameters: queryParameters);
 }
+
+queryFlowProcess() async {
+  Map<String, dynamic> queryParameters = {};
+  return await get(Config.getFlowProcess, queryParameters: queryParameters);
+}

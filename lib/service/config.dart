@@ -4,5 +4,8 @@ class Config {
   //获取表单模板数据
   static const String getFrmtemplate = ipAddress + "/App/GetFrmtemplate";
 
+  //获取流程进度
+  static const String getFlowProcess = ipAddress + "/App/GetFlowProcess";
+
   
 }

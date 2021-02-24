@@ -52,7 +52,7 @@ class _CustomDateTimeControlState extends State<CustomDateTimeControl> {
               "${selectedDate.toLocal()}".split(' ')[0],
               style: TextStyle(color: Colors.black),
             ),
-            color: Colors.white10,
+            // color: Colors.white10,
           ),
         ],
       ),

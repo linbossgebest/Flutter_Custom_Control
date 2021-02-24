@@ -13,9 +13,6 @@ import 'components/custom_steps.dart';
 import 'components/custom_flowcharts.dart';
 import 'service/control_service.dart';
 
-
-
-
 void main() {
   runApp(MyApp());
 }
@@ -57,19 +54,6 @@ class _DemoPageState extends State<DemoPage>
     _tabController =
         new TabController(length: 3, vsync: this); //固定写法，length为tab数
   }
-
-//  Future getFrmTemplate() async {
-//     await queryFrmTemplate().then((value) {
-//       if (value != null) {
-//         if (mounted) {
-//           setState(() {
-//             var resultData = value.data["resultdata"][0];
-//             return resultData;
-//           });
-//         }
-//       }
-//     });
-//   }
 
   Future getFrmTemplate() async {
     return queryFrmTemplate();
@@ -165,10 +149,13 @@ class _DemoPageState extends State<DemoPage>
       case "checkbox":
         return Container(child: CustomCheckBoxControl(data: data));
         break;
-      case "datetime":
+      case "datetime"://日期控件
         return Container(child: CustomDateTimeControl());
         break;
-      case "upload":
+      case "upload"://上传文件
+        return Container(child: FilePickerDemo());
+        break;
+      case "image"://上传图片
         return Container(child: FilePickerDemo());
         break;
       default:
