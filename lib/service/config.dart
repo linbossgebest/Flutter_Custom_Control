@@ -7,5 +7,6 @@ class Config {
   //获取流程进度
   static const String getFlowProcess = ipAddress + "/App/GetFlowProcess";
 
-  
+   //获取流程图
+  static const String getFlowCharts = ipAddress + "/App/GetFlowCharts";
 }

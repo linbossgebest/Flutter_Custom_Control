@@ -11,3 +11,8 @@ queryFlowProcess() async {
   Map<String, dynamic> queryParameters = {};
   return await get(Config.getFlowProcess, queryParameters: queryParameters);
 }
+
+queryFlowCharts() async {
+  Map<String, dynamic> queryParameters = {};
+  return await get(Config.getFlowCharts, queryParameters: queryParameters);
+}

@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_custom_control/service/control_service.dart';
 import 'package:flutter_custom_control/util/common.dart';
 
 class CustomFlowCharts extends StatefulWidget {
@@ -12,16 +13,22 @@ class CustomFlowCharts extends StatefulWidget {
 }
 
 class _CustomFlowChartsState extends State<CustomFlowCharts> {
+ Future getFlowCharts() async {
+    return queryFlowCharts();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
       padding: EdgeInsets.all(6),
       child: FutureBuilder(
-        future: getJsonData('lib/data/flow_charts.json', context),
+        // future: getJsonData('lib/data/flow_charts.json', context),
+        future: getFlowCharts(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            List<dynamic> data = json.decode(snapshot.data.toString());
+            //List<dynamic> data = json.decode(snapshot.data.toString());
+             List<dynamic> data=snapshot.data["resultdata"];
             return ListView(
               children: _initFlowDatas(data),
             );
@@ -46,7 +53,7 @@ class _CustomFlowChartsState extends State<CustomFlowCharts> {
       if (i < data.length - 1) {
         widgetList.add(Icon(Icons.arrow_downward));
       }
-    }
+    } 
 
     return widgetList;
   }
